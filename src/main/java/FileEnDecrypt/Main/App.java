@@ -30,6 +30,7 @@ public class App {
 		SecretKey securekey = null;
 		if (key == null) {
 			key = "";
+			System.out.println(key);
 		}
 		KeyGenerator keyGenerator = KeyGenerator.getInstance(keyGenerator_Model);
 		keyGenerator.init(new SecureRandom(key.getBytes()));
